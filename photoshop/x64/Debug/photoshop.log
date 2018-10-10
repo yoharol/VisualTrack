@@ -1,0 +1,6 @@
+﻿  photoshop.cpp
+f:\program files (x86)\vcproject\photoshop\photoshop\photoshop.cpp(61): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+f:\program files (x86)\vcproject\photoshop\photoshop\photoshop.cpp(88): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+f:\program files (x86)\vcproject\photoshop\photoshop\photoshop.cpp(89): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+  photoshop.vcxproj -> F:\Program Files (x86)\VCproject\photoshop\x64\Debug\photoshop.exe
+  photoshop.vcxproj -> F:\Program Files (x86)\VCproject\photoshop\x64\Debug\photoshop.pdb (Partial PDB)
