@@ -6,14 +6,14 @@
 
 1. 对于题目给出的第一帧图片以及目标位置，首先读取为*img*，中值滤波后转换为RGB图*img2*，根据数据在*img2*中画出对应的红色方框。
 
-![frame1](F:\Program Files (x86)\VCproject\photoshop\photoshop\frame1.bmp)
+![frame1](https://github.com/LunaElfGaming/VisualTrack/raw/master/photoshop/frame1.bmp)
 
 2. 接下来新建*subimg*，从第一帧中裁剪出红色方框内的局部图，采用*calcHist*函数计算局部图的灰度直方图，存储在*histimg*中并归一化，为两帧之间局部图的对比做准备。
 
 3. 读取第二帧图像*nex*，中值滤波后转换出RGB图像*nex2*
 
 4. 通过subtract函数提取第一第二帧之间的插值，并threshold二值化，二值化结果如下
-![diff](F:\Program Files (x86)\VCproject\photoshop\photoshop\diff.bmp)
+![diff](https://github.com/LunaElfGaming/VisualTrack/raw/master/photoshop/diff.bmp)
 
 5. 对于一般的二帧差算法，差异图已经能反映出第二帧中人物的位置。为了更精确的结果，此时用findContours算法寻找图片中所有的边界（不排除有一些白色小噪点），而边界点最多者为图中白色人物的边界。针对这一边界区，找出最小的方框将其包含在内，并计算出方框的中心。
 
@@ -21,7 +21,7 @@
 
 最后输出第二帧中定位框的位置，以及相应的Bhattacharyya 系数
 
-![frame2](F:\Program Files (x86)\VCproject\photoshop\photoshop\frame2.bmp)
+![frame2](https://github.com/LunaElfGaming/VisualTrack/raw/master/photoshop/frame2.bmp)
 
 #### 程序执行
 
